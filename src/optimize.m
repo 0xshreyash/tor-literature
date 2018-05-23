@@ -2,7 +2,7 @@ function optimize
     for i=2:50
         output = zeros(50,1);
         for j=1:50
-            output(i) = start_optimize(i);
+            output(j) = start_optimize(i);
         end
         dlmwrite('output-50.csv',max(output),'delimiter',',','-append');
     end
